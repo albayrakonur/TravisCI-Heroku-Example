@@ -17,7 +17,7 @@ import spark.template.mustache.MustacheTemplateEngine;
  *
  */
 public class App {
-  public static double calculate(ArrayList<Integer> array, ArrayList<Integer> array2) {
+  public static double calculate(ArrayList<Integer> array,int size_array, ArrayList<Integer> array2,int size_array2) {
     double result = 0;
     int summation_array = 0;
     int summation_array2 = 0;
@@ -71,7 +71,7 @@ public class App {
         }
         System.out.println(inputList);
 
-        double result = App.calculate(inputList, inputList2);
+        double result = App.calculate(inputList,inputList.size(), inputList2,inputList2.size());
 
         Map map = new HashMap();
         map.put("result", result);
