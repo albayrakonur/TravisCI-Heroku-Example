@@ -23,8 +23,8 @@ public class App {
     int summation_array2 = 0;
     summation_array = getSumOfArrayList(array);
     summation_array2 = getSumOfArrayList(array2);
-    int average_array = summation_array / array.size();
-    int average_array2 = summation_array2 / array2.size();
+    int average_array = summation_array / size_array;
+    int average_array2 = summation_array2 / size_array2;
     result = (average_array * 0.4) + (average_array2 * 0.6);
     return result;
 
