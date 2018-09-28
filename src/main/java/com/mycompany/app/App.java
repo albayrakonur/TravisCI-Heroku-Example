@@ -74,7 +74,7 @@ public class App {
         double result = App.calculate(inputList,inputList.size(), inputList2,inputList2.size());
 
         Map map = new HashMap();
-        map.put("result", result);
+        map.put("input1", result);
         return new ModelAndView(map, "compute.mustache");
       }, new MustacheTemplateEngine());
 
