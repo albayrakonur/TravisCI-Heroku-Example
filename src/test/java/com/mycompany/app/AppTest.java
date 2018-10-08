@@ -53,6 +53,6 @@ public class AppTest
 
     public void testNull() {
         assertFalse(new App().search(null, 1));
-    }*/
+    }
   
 }
