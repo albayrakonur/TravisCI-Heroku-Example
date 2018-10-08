@@ -81,8 +81,8 @@ public class App {
     String input4 = req.queryParams("input4").replaceAll("\\s","");
     int input4AsInt = Integer.parseInt(input4);
 
-
-    boolean result = App.search(inputList_1, input2AsInt);
+    double result = calculate(inputList_1, input2AsInt, inputList_2, input4AsInt);
+    //boolean result = App.search(inputList_1, input2AsInt);
     Map map = new HashMap();
     map.put("result", result);
     return new ModelAndView(map, "compute.mustache");
