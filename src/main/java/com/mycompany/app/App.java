@@ -23,16 +23,16 @@ public class App {
     int summation_array2 = 0;
     if(array.size() == 0 || array2.size() == 0) {
       result = -1;
-    }
-    if(ratio1 != 0 && ratio2 != 0) {
-      summation_array = getSumOfArrayList(array);
-      summation_array2 = getSumOfArrayList(array2);
-      int average_array = summation_array / array.size();
-      int average_array2 = summation_array2 / array2.size();
-      result = (average_array * ((double)ratio1/100)) + (average_array2 * ((double)ratio2/100));
+    }else if(ratio1 == 0 && ratio2 == 0) {
+      result = -2;
     }else {
-      throw new IllegalArgumentException("2nd and 4th argument cannot be 0");
+      summation_array = getSumOfArrayList(array);
+    summation_array2 = getSumOfArrayList(array2);
+    int average_array = summation_array / array.size();
+    int average_array2 = summation_array2 / array2.size();
+    result = (average_array * ((double)ratio1/100)) + (average_array2 * ((double)ratio2/100));
     }
+    
     return result;
 
   }
