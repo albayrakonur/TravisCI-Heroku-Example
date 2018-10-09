@@ -60,8 +60,8 @@ public class App {
         System.out.println(inputList);
 
 
-        String input2 = req.queryParams("input3");
-        java.util.Scanner sc2 = new java.util.Scanner(input2);
+        String input3 = req.queryParams("input3");
+        java.util.Scanner sc2 = new java.util.Scanner(input3);
         sc2.useDelimiter("[;\r\n]+");
         java.util.ArrayList<Integer> inputList2 = new java.util.ArrayList<>();
         while (sc2.hasNext())
@@ -70,6 +70,13 @@ public class App {
           inputList2.add(value);
         }
         System.out.println(inputList);
+
+        String input2 = req.queryParams("input2").replaceAll("\\s","");
+        int input2AsInt = Integer.parseInt(input2);
+
+
+        String input4 = req.queryParams("input4").replaceAll("\\s","");
+        int input4AsInt = Integer.parseInt(input2);
 
         double result = App.calculate(inputList,inputList.size(), inputList2,inputList2.size());
 
