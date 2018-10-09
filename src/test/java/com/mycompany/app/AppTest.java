@@ -43,7 +43,7 @@ public class AppTest
         assertEquals(result, new App().calculate(array, 40, array2, 60));
     }
   
-    public void testNotFound() {
+    /*public void testNotFound() {
         ArrayList<Integer> array = new ArrayList<>(Arrays.asList(50,40,80,90));
         ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,87,95));
         double result = 80;
@@ -55,7 +55,7 @@ public class AppTest
         ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,80,90));
         assertNull(new App().calculate(array, 40, array2, 60));
 
-    }
+    }*/
 
     /*public void testNull() {
         assertFalse(new App().search(null, 1));
