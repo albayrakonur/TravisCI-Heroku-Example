@@ -78,7 +78,7 @@ public class App {
         String input4 = req.queryParams("input4").replaceAll("\\s","");
         int input4AsInt = Integer.parseInt(input2);
 
-        double result = App.calculate(inputList,inputList.size(), inputList2,inputList2.size());
+        double result = App.calculate(inputList, input2AsInt, inputList2, input4AsInt);
 
         Map map = new HashMap();
         map.put("result", result);
