@@ -17,15 +17,15 @@ import spark.template.mustache.MustacheTemplateEngine;
  *
  */
 public class App {
-  public static double calculate(ArrayList<Integer> array,int size_array, ArrayList<Integer> array2,int size_array2) {
+  public static double calculate(ArrayList<Integer> array,int ratio1, ArrayList<Integer> array2,int ratio2) {
     double result = 0;
     int summation_array = 0;
     int summation_array2 = 0;
     summation_array = getSumOfArrayList(array);
     summation_array2 = getSumOfArrayList(array2);
-    int average_array = summation_array / size_array;
-    int average_array2 = summation_array2 / size_array2;
-    result = (average_array * 0.4) + (average_array2 * 0.6);
+    int average_array = summation_array / array.size();
+    int average_array2 = summation_array2 / array2.size();
+    result = (average_array * ratio1) + (average_array2 * ratio2);
     return result;
 
   }
