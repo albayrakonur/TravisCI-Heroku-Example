@@ -19,8 +19,8 @@ import spark.template.mustache.MustacheTemplateEngine;
 public class App {
   public static double calculate(ArrayList<Integer> array,int ratio1, ArrayList<Integer> array2,int ratio2) {
     double result = 0;
-    int summation_array = 0;
-    int summation_array2 = 0;
+    int summationOfArray = 0;
+    int summationOfArray2 = 0;
     if(array == null || array2 == null){
       return -3;
     }else if(array.size() == 0 || array2.size() == 0) {
@@ -30,10 +30,10 @@ public class App {
     }else if(ratio1 + ratio2 != 100) {
       return -4;
     }else {
-    summation_array = getSumOfArrayList(array);
-    summation_array2 = getSumOfArrayList(array2);
-    int average_array = summation_array / array.size();
-    int average_array2 = summation_array2 / array2.size();
+    summationOfArray = getSumOfArrayList(array);
+    summationOfArray2 = getSumOfArrayList(array2);
+    int average_array = summationOfArray / array.size();
+    int average_array2 = summationOfArray2 / array2.size();
     result = (average_array * ((double)ratio1/100)) + (average_array2 * ((double)ratio2/100));
     }
     
