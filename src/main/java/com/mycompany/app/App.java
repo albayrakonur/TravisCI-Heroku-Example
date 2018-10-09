@@ -69,7 +69,7 @@ public class App {
           int value = Integer.parseInt(sc2.next().replaceAll("\\s",""));
           inputList2.add(value);
         }
-        System.out.println(inputList);
+        System.out.println(inputList2);
 
         String input2 = req.queryParams("input2").replaceAll("\\s","");
         int input2AsInt = Integer.parseInt(input2);

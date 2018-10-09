@@ -36,22 +36,28 @@ public class AppTest
     public void testApp() {
         assertTrue( true );
     }
-    /*public void testFound() {
-        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-        assertTrue(new App().search(array, 4));
+    public void testFound() {
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(50,40,80,90));
+        ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,87,95));
+        double result = 66.8;
+        assertEquals(result, new App().calculate(array, 40, array2, 60));
     }
   
     public void testNotFound() {
-        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-        assertFalse(new App().search(array, 5));
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(50,40,80,90));
+        ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,87,95));
+        double result = 80;
+        assertEquals(result, new App().calculate(array, 40, array2, 60));
     }
 
     public void testEmptyArray() {
         ArrayList<Integer> array = new ArrayList<>();
-        assertFalse(new App().search(array, 1));
+        ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,80,90));
+        assertNull(new App().calculate(array, 40, array2, 60));
+
     }
 
-    public void testNull() {
+    /*public void testNull() {
         assertFalse(new App().search(null, 1));
     }*/
   
