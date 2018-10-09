@@ -73,10 +73,12 @@ public class App {
 
         String input2 = req.queryParams("input2").replaceAll("\\s","");
         int input2AsInt = Integer.parseInt(input2);
+        System.out.println("input2: " + input2AsInt);
 
 
         String input4 = req.queryParams("input4").replaceAll("\\s","");
         int input4AsInt = Integer.parseInt(input2);
+        System.out.println("input4: " + input4AsInt);
 
         double result = App.calculate(inputList, input2AsInt, inputList2, input4AsInt);
 
