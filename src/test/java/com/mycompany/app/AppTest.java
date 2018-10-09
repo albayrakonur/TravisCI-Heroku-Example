@@ -50,12 +50,12 @@ public class AppTest
         assertEquals(result, new App().calculate(array, 40, array2, 60));
     }*/
 
-    public void testEmptyArray() {
+    /*public void testEmptyArray() {
         ArrayList<Integer> array = new ArrayList<>();
         ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,80,90));
         assertNull(new App().calculate(array, 40, array2, 60));
 
-    }
+    }*/
 
     /*public void testNull() {
         assertFalse(new App().search(null, 1));
