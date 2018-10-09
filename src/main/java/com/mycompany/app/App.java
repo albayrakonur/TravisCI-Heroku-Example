@@ -27,6 +27,8 @@ public class App {
       return -1;
     }else if(ratio1 == 0 || ratio2 == 0) {
       return -2;
+    }else if(ratio1 + ratio2 != 100) {
+      return -4;
     }else {
     summation_array = getSumOfArrayList(array);
     summation_array2 = getSumOfArrayList(array2);

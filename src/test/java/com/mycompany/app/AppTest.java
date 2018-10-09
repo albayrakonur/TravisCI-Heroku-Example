@@ -64,5 +64,12 @@ public class AppTest
         double result = -3;
         assertEquals(result,new App().calculate(array, 0,null,60));
     }
+
+    public void testRatioSum() {
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(50,40,80,90));
+        ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,87,95));
+        double result = -4;
+        assertEquals(result,new App().calculate(array, 60,array2,60));
+    }
   
 }
