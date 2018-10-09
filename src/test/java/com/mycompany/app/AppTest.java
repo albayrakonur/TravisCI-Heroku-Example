@@ -58,6 +58,14 @@ public class AppTest
 
     }
 
+    public void testZeroRatio() {
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(50,40,80,90));
+        ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,87,95));
+        double result = -2;
+        assertEquals(result,new App().calculate(array, 0,array2,60));
+
+    }
+
     /*public void testNull() {
         assertFalse(new App().search(null, 1));
     }*/
