@@ -42,13 +42,6 @@ public class AppTest
         double result = 66.8;
         assertEquals(result, new App().calculate(array, 40, array2, 60));
     }
-  
-    /*public void testNotFound() {
-        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(50,40,80,90));
-        ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,87,95));
-        double result = 80;
-        assertEquals(result, new App().calculate(array, 40, array2, 60));
-    }*/
 
     public void testEmptyArray() {
         ArrayList<Integer> array = new ArrayList<>();
@@ -58,7 +51,7 @@ public class AppTest
 
     }
 
-    public void testZeroRatio() {
+    public void testZeroArgument() {
         ArrayList<Integer> array = new ArrayList<>(Arrays.asList(50,40,80,90));
         ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(50,40,87,95));
         double result = -2;
@@ -66,8 +59,10 @@ public class AppTest
 
     }
 
-    /*public void testNull() {
-        assertFalse(new App().search(null, 1));
-    }*/
+    public void testNull() {
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(50,40,80,90));
+        double result = -3;
+        assertEquals(result,new App().calculate(array, 0,null,60));
+    }
   
 }

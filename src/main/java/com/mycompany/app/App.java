@@ -25,6 +25,8 @@ public class App {
       result = -1;
     }else if(ratio1 == 0 || ratio2 == 0) {
       result = -2;
+    }else if(array == null || array2 == null){
+      result = -3;
     }else {
       summation_array = getSumOfArrayList(array);
     summation_array2 = getSumOfArrayList(array2);
@@ -112,6 +114,3 @@ public class App {
       return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
   }
 }
-
-
-
