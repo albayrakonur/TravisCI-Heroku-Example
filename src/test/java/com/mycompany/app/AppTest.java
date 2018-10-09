@@ -51,9 +51,10 @@ public class AppTest
     }*/
 
     public void testEmptyArray() {
-        ArrayList<Integer> array = null;
-        ArrayList<Integer> array2 = null;
-        assertNull(new App().calculate(array, 40,array2,60));
+        ArrayList<Integer> array = new ArrayList<>();
+        ArrayList<Integer> array2 = new ArrayList<>();
+        double result = 1;
+        assertEquals(result,new App().calculate(array, 40,array2,60));
 
     }
 
