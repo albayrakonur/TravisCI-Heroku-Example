@@ -25,7 +25,7 @@ public class App {
     summation_array2 = getSumOfArrayList(array2);
     int average_array = summation_array / array.size();
     int average_array2 = summation_array2 / array2.size();
-    result = (average_array * (ratio1/100)) + (average_array2 * (ratio2/100));
+    result = (average_array * ((double)ratio1/100)) + (average_array2 * ((double)ratio2/100));
     return result;
 
   }
