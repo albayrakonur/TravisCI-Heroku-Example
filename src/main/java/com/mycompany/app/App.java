@@ -21,14 +21,14 @@ public class App {
     double result = 0;
     int summation_array = 0;
     int summation_array2 = 0;
-    if(array.size() == 0 || array2.size() == 0) {
-      result = -1;
+    if(array == null || array2 == null){
+      return -3;
+    }else if(array.size() == 0 || array2.size() == 0) {
+      return -1;
     }else if(ratio1 == 0 || ratio2 == 0) {
-      result = -2;
-    }else if(array == null || array2 == null){
-      result = -3;
+      return -2;
     }else {
-      summation_array = getSumOfArrayList(array);
+    summation_array = getSumOfArrayList(array);
     summation_array2 = getSumOfArrayList(array2);
     int average_array = summation_array / array.size();
     int average_array2 = summation_array2 / array2.size();
