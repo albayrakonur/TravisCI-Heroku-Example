@@ -23,7 +23,7 @@ public class App {
     int summation_array2 = 0;
     if(array.size() == 0 || array2.size() == 0) {
       result = -1;
-    }else if(ratio1 == 0 && ratio2 == 0) {
+    }else if(ratio1 == 0 || ratio2 == 0) {
       result = -2;
     }else {
       summation_array = getSumOfArrayList(array);
